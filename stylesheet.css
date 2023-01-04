@@ -26,3 +26,9 @@ header {
     justify-content: center;
     padding: 15px;
 }
+
+.para {
+    font-size: 120px;
+    margin-right: 10px;
+    text-align: center;
+}
