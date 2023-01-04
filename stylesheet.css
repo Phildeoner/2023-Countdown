@@ -10,8 +10,11 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
-.head {
-    background: rgb(37, 129, 37);
+header {
+    background: rgb(37, 129, 37); 
+    opacity: 0.2;
+    padding: 10px;
 }
