@@ -2,4 +2,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-image: url(000307193.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
