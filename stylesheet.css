@@ -17,4 +17,12 @@ header {
     background: rgb(37, 129, 37); 
     opacity: 0.2;
     padding: 10px;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
