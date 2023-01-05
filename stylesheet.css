@@ -2,14 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    color: white;
+    color: aliceblue;
 }
 
 body {
     background-image: url(000307193.jpg);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
 }
 
@@ -45,4 +44,24 @@ header {
     margin-right: 10px;
     padding: 5px 0px;
     border-radius: 5px;
+}
+
+footer{
+    margin-top: 165px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.message p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.message {
+    max-width: 1000px;
 }
