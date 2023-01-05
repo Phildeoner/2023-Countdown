@@ -1,8 +1,3 @@
-let getDays = document.getElementById("days");
-let getHours = document.getElementById("hours");
-let getMins = document.getElementById("mins");
-let getSecs = document.getElementById("secs");
-
 // Set Count Down date
 let countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
 
@@ -22,18 +17,20 @@ let timeUpdate = updateTime(function() {
     let seconds = Math.floor((interval % (1000 * 60)) / 1000);
   
     // Display the time.
-    getDays.innerHTML = days;
-    getHours.innerHTML = hours;
-    getMins.innerHTML = minutes;
-    getSecs.innerHTML = seconds;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+    document.getElementById("secs").innerHTML = seconds;
 
     // If the count down is finished, write some text
     if (interval < 0) {
         clearInterval(timeUpdate);
-        getDays.innerHTML = 000;
-        getHours.innerHTML = 00;
-        getMins.innerHTML = 00;
-        getSecs.innerHTML = 00;
+        document.getElementById("days").innerHTML = 000;
+        document.getElementById("hours").innerHTML = 00;
+        document.getElementById("mins").innerHTML = 00;
+        document.getElementById("secs").innerHTML = 00;
         document.getElementById("timeUp").innerHTML = "🎇HAPPY NEW YEAR🎇";
     }
   }, 1000);
+
+  updateTime(), 1000;
