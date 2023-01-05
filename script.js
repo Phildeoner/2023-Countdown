@@ -26,5 +26,13 @@ let timeUpdate = updateTime(function() {
     getHours.innerHTML = hours;
     getMins.innerHTML = minutes;
     getSecs.innerHTML = seconds;
-    
+
+    // If the count down is finished, write some text
+    if (interval < 0) {
+        clearInterval(timeUpdate);
+        getDays.innerHTML = 000;
+        getHours.innerHTML = 00;
+        getMins.innerHTML = 00;
+        getSecs.innerHTML = 00;
+    }
   }, 1000);
