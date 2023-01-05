@@ -58,6 +58,13 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 15px;
+    animation: timer;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes timer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}     
 }
 
 .para {
@@ -86,9 +93,12 @@ footer{
 
 .end {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;    
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.copyRight {
+    margin-top: auto;
 }
 
 .message p{
