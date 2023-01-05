@@ -19,6 +19,40 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: 50px;
+    animation: h1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes h1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}     
+}
+
+h3 {
+    font-size: 25px;
+    animation: h3;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes h3 {
+    0% {top: -90px;}
+    100% {top: -5px;}      
+}
+
+.message p{
+    animation: ender;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+@keyframes ender {
+    0% {left: -900px;}
+    100% {left: 0px;}      
+}
+
 .timer {
     display: flex;
     align-items: center;
@@ -47,14 +81,14 @@ header {
 }
 
 footer{
-    margin-top: 165px;
+    margin-top: 135px;
 }
 
 .end {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px;    
 }
 
 .message p{
@@ -64,4 +98,20 @@ footer{
 
 .message {
     max-width: 1000px;
+}
+
+.secs {
+    min-width: 160px;
+}
+
+.hours{
+    min-width: 160px;
+}
+
+.mins{
+    min-width: 160px;
+}
+
+.days {
+    min-width: 230px;
 }
