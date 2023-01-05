@@ -34,5 +34,6 @@ let timeUpdate = updateTime(function() {
         getHours.innerHTML = 00;
         getMins.innerHTML = 00;
         getSecs.innerHTML = 00;
+        document.getElementById("timeUp").innerHTML = "🎇HAPPY NEW YEAR🎇";
     }
   }, 1000);
