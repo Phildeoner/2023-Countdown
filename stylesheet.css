@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-image: url(000307193.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    background: rgb(37, 129, 37); 
+    opacity: 0.2;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    animation: h1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes h1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}     
+}
+
+h3 {
+    font-size: 25px;
+    animation: h3;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes h3 {
+    0% {top: -90px;}
+    100% {top: -5px;}      
+}
+
+.message p{
+    animation: ender;
+    position: relative;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+}
+@keyframes ender {
+    0% {left: -900px;}
+    100% {left: 0px;}      
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    animation: timer;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes timer {
+    0% {opacity: 0;}
+    100% {opacity: 1;}     
+}
+
+.para {
+    font-size: 120px;
+    margin-right: 10px;
+    text-align: center;
+    border: 2px solid;
+    padding: 0px 5px;
+    border-radius: 8px;
+}
+
+.label {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin-top: 100px;
+    border: 3px solid;
+    margin-right: 10px;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+footer{
+    margin-top: 135px;
+}
+
+.end {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.copyRight {
+    margin-top: auto;
+}
+
+.message p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.message {
+    max-width: 1000px;
+}
+
+.secs {
+    min-width: 160px;
+}
+
+.hours{
+    min-width: 160px;
+}
+
+.mins{
+    min-width: 160px;
+}
+
+.days {
+    min-width: 230px;
+}
