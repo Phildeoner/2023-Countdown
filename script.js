@@ -16,10 +16,10 @@ let timeUpdate = setInterval(function() {
 
     if (interval < 0) {
         clearInterval(timeUpdate);
-        document.getElementById("days").innerHTML = 000;
-        document.getElementById("hours").innerHTML = 00;
-        document.getElementById("mins").innerHTML = 00;
-        document.getElementById("secs").innerHTML = 00;
+        days = 000;
+        hours = 00;
+        minutes = 00;
+        seconds = 00;
         document.getElementById("timeUp").innerHTML = "🎇HAPPY NEW YEAR🎇";
     }
   }, 1000);
